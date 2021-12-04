@@ -1,0 +1,28 @@
+/*
+ * io_define.h
+ *
+ *  Created on: 2021Äê11ÔÂ4ÈÕ
+ *      Author: Sky
+ */
+
+#ifndef PROJECTS_80_EMPTY_PROJ_USER_INC_IO_DEFINE_H_
+#define PROJECTS_80_EMPTY_PROJ_USER_INC_IO_DEFINE_H_
+#include		"public_define.h"
+
+
+
+#define	POWER_KEY_PORT				GPIOC
+#define	POWER_KEY_PIN					GPIO_PIN_13
+#define	POWER_KEY_SOURCE_PORT		EXTI_SOURCE_GPIOC
+#define	POWER_KEY_SOURCE_PIN			EXTI_SOURCE_PIN13
+#define	POWER_KEY_EXTI_NO				EXTI_13
+#define	GET_POWER_KEY_STTS			gpio_input_bit_get(POWER_KEY_PORT, POWER_KEY_PIN)
+
+
+#define	SWITCH_KEY_PORT				GPIOB
+#define	SWITCH_KEY_PIN					GPIO_PIN_0
+#define	SWITCH_KEY_SOURCE_PORT		EXTI_SOURCE_GPIOB
+#define	SWITCH_KEY_SOURCE_PIN		EXTI_SOURCE_PIN0
+#define	SWITCH_KEY_EXTI_NO			EXTI_0
+
+#endif /* PROJECTS_80_EMPTY_PROJ_USER_INC_IO_DEFINE_H_ */
